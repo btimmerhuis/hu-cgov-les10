@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Cgov les 10 app</title>
+    </head>
+
+    <body>
+        <header class="site-header">
+            <nav class="nav">
+                <a class="nav-link logo" href="{{ url_for('cgov.index') }}">Cgov les 10 app</a>
+            </nav>
+        </header>
+
+        <main class="content">
+              <!-- child template -->
+              {% block content %}
+              {% endblock %}
+        </main>
+
+        <footer class="site-footer">
+            <small>Robert Lansing en Bram Timmerhuis</small>
+        </footer>
+    </body>
+</html>
