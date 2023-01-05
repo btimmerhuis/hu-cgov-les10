@@ -10,7 +10,7 @@ on:
     branches: [ "main" ]
 
 env:
-  AZURE_WEBAPP_NAME: hu-cgov-les10
+  AZURE_WEBAPP_NAME: hu-lesson10
   AZURE_WEBAPP_PACKAGE_PATH: '.'
 
 permissions:
