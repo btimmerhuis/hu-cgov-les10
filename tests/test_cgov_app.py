@@ -1,5 +1,6 @@
 from project import create_app
 
+
 def test_index():
     flask_app = create_app()
 

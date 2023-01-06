@@ -5,8 +5,26 @@
 <div class="container">
     <header class="content-text">
         <h1>Welcome to the <strong>cgov demo app</strong></h1>
-        <p><em>stuff </em>
-        <p><em>More stuff </em>
     </header>
 </div>
+<p>
+<div>
+    <form role="form" method='POST' action="/">
+        <div class="form-group">
+            <input type="text" name="action" class="form-control" id="action-box" placeholder="Geef een todo actie op.." style="max-width: 300px;" autofocus required>
+        </div>
+        <button type="submit" class="btn btn-default">Aanmaken</button>
+    </form>
+</div>
+<p>
+<div class="container">
+    <body>
+        {% for ITEM in TODO_ITEMS %}
+        <em>TODO #{{ITEM.id}}</em><br>
+        <em>{{ITEM.action}}</em><br>
+        <a href="{{url_for('cgov.delete', id=ITEM.id)}}"><input type="button" value="delete"></a><br>
+        {% endfor %}
+    </body>
+</div>
+<p>
 {% endblock %}
