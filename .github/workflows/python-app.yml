@@ -45,7 +45,7 @@ jobs:
       uses: azure/appservice-build@v2
       with:
         platform: Python
-        platform-version: 3.11
+        platform-version: 3.10.9
     - name: Deploy web App using GH Action azure/webapps-deploy
       uses: azure/webapps-deploy@v2
       with:
