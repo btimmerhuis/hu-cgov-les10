@@ -3,6 +3,7 @@ import os
 
 # Determine the folder of the top-level directory of this project
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
+DBPASS = os.getenv('DBPASS')
 
 
 class Config(object):
@@ -11,7 +12,7 @@ class Config(object):
     TESTING = False
     # Logging
     LOG_WITH_GUNICORN = os.getenv('LOG_WITH_GUNICORN', default=False)
-    SQLALCHEMY_DATABASE_URI = f"sqlite:///{os.path.join(BASEDIR, 'dev.db')}"
+    SQLALCHEMY_DATABASE_URI = f"postgres+psycopg2://hules10:{DBPASS}@hu-lesson10.postgres.database.azure.com/todo?sslmode=require" # noqa
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
