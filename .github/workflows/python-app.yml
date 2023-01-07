@@ -41,6 +41,8 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+      env:
+        DBPASS: ${{ secrets.POSTGRES_PASSWORD }}
     - name: Building web app
       uses: azure/appservice-build@v2
       with:
