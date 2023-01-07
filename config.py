@@ -12,7 +12,7 @@ class Config(object):
     TESTING = False
     # Logging
     LOG_WITH_GUNICORN = os.getenv('LOG_WITH_GUNICORN', default=False)
-    SQLALCHEMY_DATABASE_URI = f"postgres+psycopg2://hules10:{DBPASS}@hu-lesson10.postgres.database.azure.com/todo?sslmode=require" # noqa
+    SQLALCHEMY_DATABASE_URI = f"postgresql+psycopg2://hules10:{DBPASS}@hu-lesson10.postgres.database.azure.com/todo?sslmode=require" # noqa
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
