@@ -1,2 +1,2 @@
 # Cloud Governance Lesson 10
-Voor les 10 van het vak Cloud Governance gegeven aan Hogeschool Utrecht.
+Voor les 10 van het vak Cloud Governance gegeven aan Hogeschool Utrecht. Hebben wij een webapp geschreven en daarbij een CI/CD pipeline ingericht. De gebruikte technologie is Python, Flask, Postgresql, Flake8, Pytest, GitHub repositories, GitHub Actions, Azure App Service, Azure database for Postgresql. De app is een basis todo app. via de site kan je een string opgeven welke dan als todo item wordt weergegeven als de taak uitgevoerd is kan je 'm weer verwijderen.
